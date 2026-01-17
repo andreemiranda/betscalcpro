@@ -15,4 +15,5 @@ export const COLORS = {
 export const STORAGE_KEYS = {
   USER_PREFERENCES: 'bets_calc_pro_prefs',
   LAST_CALC: 'bets_calc_pro_last_calc',
+  STATS: 'bets_calc_pro_stats',
 };

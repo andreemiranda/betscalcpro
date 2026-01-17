@@ -33,7 +33,7 @@ O projeto é organizado de forma modular para facilitar a manutenção e escalab
 │   ├── calculations.ts      # Motor matemático da Progressão de Banca
 │   └── formatters.ts        # Máscaras de moeda (BRL) e formatação
 │
-└── images/             # Pasta sugerida para ativos visuais (deve ser criada)
+└── images/             # Pasta sugerida para ativos visuais
     ├── favicon.png          # 32x32px
     ├── og-image.png         # 1200x630px (Redes Sociais)
     ├── twitter-card.png     # 1200x600px
@@ -69,12 +69,11 @@ Para garantir que o app tenha sua identidade visual, substitua os arquivos na pa
 
 ## 📝 Como utilizar a Progressão
 
-O cálculo baseia-se na fórmula de juros sobre o capital acumulado, aqui chamada de **Progressão de Banca**:
-`M = C × (1 + i)ⁿ`
+O cálculo baseia-se na **Progressão de Banca Acumulada**, onde o lucro de cada etapa é reinvestido para potencializar os resultados através do crescimento exponencial:
 
 - **C**: Banca Inicial.
 - **i**: Porcentagem de lucro esperado por jogo (ex: 10%).
-- **n**: Quantidade de "greens" sucessivos (jogos).
+- **n**: Quantidade de etapas sucessivas (jogos no ciclo).
 
 ---
 
