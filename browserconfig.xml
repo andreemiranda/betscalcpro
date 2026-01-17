@@ -1,0 +1,13 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="https://picsum.photos/70/70?random=ms70"/>
+            <square150x150logo src="https://picsum.photos/150/150?random=ms150"/>
+            <square310x310logo src="https://picsum.photos/310/310?random=ms310"/>
+            <wide310x150logo src="https://picsum.photos/310/150?random=ms310w"/>
+            <TileColor>#006B3D</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

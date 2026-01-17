@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="language" content="pt-BR">
+
+    <title>Calculadora de Investimentos em BETs | Gestão de Banca | André Miranda</title>
+    <meta name="description" content="Calculadora profissional de progressão de banca em apostas esportivas. Simule o crescimento exponencial da sua banca através de apostas simples sucessivas.">
+    
+    <meta name="theme-color" content="#006B3D">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#006B3D',
+              primaryDark: '#004d2b',
+              accent: '#FBEE23',
+              success: '#009954',
+              cardGreen: '#e6f5ed',
+              cardYellow: '#fff8cc',
+              cardAccent: '#e9f7f1',
+              neutralBg: '#f9fafb'
+            },
+            borderRadius: {
+              'responsive': 'clamp(16px, 4vw, 24px)',
+              'input': 'clamp(12px, 3vw, 14px)'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background: linear-gradient(135deg, #006B3D, #004d2b);
+        min-height: 100vh;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e6f5ed;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #006B3D;
+        border-radius: 10px;
+        border: 3px solid #e6f5ed;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #004d2b;
+      }
+      
+      /* Prevenção de quebra de números e alinhamento tabular */
+      .tabular-nums {
+        font-variant-numeric: tabular-nums;
+      }
+      .no-wrap {
+        white-space: nowrap;
+      }
+      
+      input { user-select: text; }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "jspdf-autotable": "https://esm.sh/jspdf-autotable@^5.0.7",
+        "jspdf": "https://esm.sh/jspdf@^4.0.0"
+      }
+    }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased text-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

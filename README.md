@@ -1,0 +1,85 @@
+
+# 🚀 Bet's Calc Pro - Gestão de Banca Profissional
+
+Uma calculadora PWA (Progressive Web App) de alta performance projetada para apostadores profissionais simularem a **Progressão de Banca** através do reinvestimento acumulado.
+
+---
+
+## 📂 Estrutura do Projeto
+
+O projeto é organizado de forma modular para facilitar a manutenção e escalabilidade:
+
+```text
+/
+├── index.html          # Ponto de entrada HTML com Metatags SEO e PWA
+├── index.tsx           # Inicialização do React e registro do Service Worker
+├── App.tsx             # Componente principal e orquestrador da lógica
+├── types.ts            # Definições de interfaces TypeScript
+├── constants.ts        # Cores, chaves de armazenamento e configurações globais
+├── metadata.json       # Metadados para a infraestrutura do projeto
+├── manifest.json       # Configurações do PWA (ícones, cores, display)
+├── service-worker.js   # Lógica de cache offline e PWA
+│
+├── components/         # Componentes de UI Reutilizáveis
+│   ├── InputGroup.tsx       # Campos de entrada estilizados
+│   ├── ResultCard.tsx       # Cards de resumo de resultados
+│   └── ProgressionTable.tsx # Tabela detalhada jogo a jogo
+│
+├── services/           # Integrações e serviços externos
+│   ├── pdfGenerator.ts      # Geração de relatórios PDF profissionais (jsPDF)
+│   └── shareService.ts      # API de compartilhamento nativo e cópia
+│
+├── utils/              # Lógica pura e auxiliares
+│   ├── calculations.ts      # Motor matemático da Progressão de Banca
+│   └── formatters.ts        # Máscaras de moeda (BRL) e formatação
+│
+└── images/             # Pasta sugerida para ativos visuais (deve ser criada)
+    ├── favicon.png          # 32x32px
+    ├── og-image.png         # 1200x630px (Redes Sociais)
+    ├── twitter-card.png     # 1200x600px
+    ├── pwa-192.png          # 192x192px (Ícone do App)
+    └── pwa-512.png          # 512x512px (Ícone Splash)
+```
+
+---
+
+## 🖼️ Guia de Personalização de Imagens
+
+Para garantir que o app tenha sua identidade visual, substitua os arquivos na pasta `/images/` seguindo estas especificações:
+
+| Arquivo | Tamanho Recomendado | Uso |
+| :--- | :--- | :--- |
+| **favicon.png** | 32x32 px | Ícone da aba do navegador. |
+| **og-image.png** | 1200x630 px | Imagem que aparece no WhatsApp, Facebook e LinkedIn. |
+| **twitter-card.png**| 1200x600 px | Imagem otimizada para o Twitter (X). |
+| **pwa-192.png** | 192x192 px | Ícone exibido na tela inicial do celular Android/iOS. |
+| **pwa-512.png** | 512x512 px | Ícone da tela de carregamento (Splash Screen) do PWA. |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React 19**: Interface reativa e moderna.
+- **Tailwind CSS**: Estilização via classes utilitárias rápida e responsiva.
+- **Lucide React**: Biblioteca de ícones leves e elegantes.
+- **jsPDF & AutoTable**: Geração de documentos PDF no lado do cliente.
+- **Service Workers**: Capacidade offline e instalação nativa.
+
+---
+
+## 📝 Como utilizar a Progressão
+
+O cálculo baseia-se na fórmula de juros sobre o capital acumulado, aqui chamada de **Progressão de Banca**:
+`M = C × (1 + i)ⁿ`
+
+- **C**: Banca Inicial.
+- **i**: Porcentagem de lucro esperado por jogo (ex: 10%).
+- **n**: Quantidade de "greens" sucessivos (jogos).
+
+---
+
+## 👨‍💻 Autor
+Desenvolvido por **André Miranda**.
+[Acessar Site do Autor](https://github.com/andreemiranda)
+
+© 2026 Bet's Calc Pro - Todos os direitos reservados.
