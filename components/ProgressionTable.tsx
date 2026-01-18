@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { ProgressionRow } from '../types';
-import { formatCurrency, formatPercent } from '../utils/formatters';
+import { ProgressionRow } from '../types.ts';
+import { formatCurrency, formatPercent } from '../utils/formatters.ts';
 
 interface ProgressionTableProps {
   data: ProgressionRow[];

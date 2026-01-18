@@ -4,7 +4,12 @@ const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/browserconfig.xml'
+  '/browserconfig.xml',
+  '/images/favicon.png',
+  '/images/apple-touch-icon.png',
+  '/images/pwa-192.png',
+  '/images/pwa-512.png',
+  '/images/og-image.png'
 ];
 
 // Instalação: Cacheia recursos estáticos

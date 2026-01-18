@@ -33,13 +33,30 @@ O projeto é organizado de forma modular para facilitar a manutenção e escalab
 │   ├── calculations.ts      # Motor matemático da Progressão de Banca
 │   └── formatters.ts        # Máscaras de moeda (BRL) e formatação
 │
-└── images/             # Pasta sugerida para ativos visuais
-    ├── favicon.png          # 32x32px
-    ├── og-image.png         # 1200x630px (Redes Sociais)
-    ├── twitter-card.png     # 1200x600px
-    ├── pwa-192.png          # 192x192px (Ícone do App)
-    └── pwa-512.png          # 512x512px (Ícone Splash)
+└── images/             # Ativos visuais obrigatórios para o GitHub
 ```
+
+---
+
+## 🖼️ Relação de Imagens para Publicação
+
+Para que o aplicativo funcione corretamente como PWA e exiba os cards em redes sociais, certifique-se de que a pasta `/images/` contenha os seguintes arquivos:
+
+### Identidade Visual e Redes Sociais
+- **favicon.png** (32x32px): Ícone da aba do navegador.
+- **og-image.png** (1200x630px): Imagem de visualização para WhatsApp, Facebook e LinkedIn.
+- **twitter-card.png** (1200x600px): Imagem otimizada especificamente para o Twitter (X).
+
+### Ícones do App (PWA)
+Estes ícones são fundamentais para que o usuário possa "Instalar" o app no celular:
+- **apple-touch-icon.png** (180x180px): Ícone específico para dispositivos iOS (Apple).
+- **pwa-72.png** (72x72px)
+- **pwa-96.png** (96x96px)
+- **pwa-128.png** (128x128px)
+- **pwa-144.png** (144x144px)
+- **pwa-152.png** (152x152px)
+- **pwa-192.png** (192x192px): Ícone principal da tela inicial.
+- **pwa-512.png** (512x512px): Ícone da tela de carregamento (Splash Screen).
 
 ---
 
@@ -53,18 +70,8 @@ O projeto é organizado de forma modular para facilitar a manutenção e escalab
 
 ---
 
-## 📝 Como utilizar a Progressão
-
-O cálculo baseia-se na **Progressão de Banca Acumulada**, onde o lucro de cada etapa é reinvestido para potencializar os resultados através do crescimento exponencial:
-
-- **C**: Banca Inicial.
-- **i**: Porcentagem de lucro esperado por jogo (ex: 10%).
-- **n**: Quantidade de etapas sucessivas (jogos no ciclo).
-
----
-
 ## 👨‍💻 Autor
 Desenvolvido por **André Miranda**.
-[Acessar Site do Autor](https://github.com/andreemiranda)
+[Acessar Perfil no GitHub](https://github.com/andreemiranda)
 
 © 2026 Bet's Calc Pro - Todos os direitos reservados.

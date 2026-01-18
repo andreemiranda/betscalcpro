@@ -14,6 +14,23 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+    <!-- Ícones e Favicon local -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bet's Calc Pro - Gestão de Banca">
+    <meta property="og:description" content="Simule sua progressão de banca com reinvestimento acumulado.">
+    <meta property="og:image" content="/images/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bet's Calc Pro">
+    <meta name="twitter:description" content="Calculadora Profissional de Apostas.">
+    <meta name="twitter:image" content="/images/twitter-card.png">
+
     <!-- Google Fonts: Lexend -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,53 +69,40 @@
       }
       body {
         font-family: 'Lexend', sans-serif;
-        background: linear-gradient(135deg, #006B3D, #004d2b);
+        background: #006B3D; /* Cor fixa para evitar flashes brancos */
         min-height: 100vh;
+        margin: 0;
       }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 12px;
-        height: 12px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #e6f5ed;
-        border-radius: 10px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #006B3D;
-        border-radius: 10px;
-        border: 3px solid #e6f5ed;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #004d2b;
-      }
-      
-      /* Prevenção de quebra de números e alinhamento tabular */
       .tabular-nums {
         font-variant-numeric: tabular-nums;
       }
-      .no-wrap {
-        white-space: nowrap;
-      }
-      
       input { user-select: text; }
+      
+      /* Efeito de hover amarelo global para links que não usam tailwind explicitamente */
+      a:hover {
+        color: #FBEE23 !important;
+        border-color: #FBEE23 !important;
+      }
     </style>
     <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@^19.2.3",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-        "jspdf-autotable": "https://esm.sh/jspdf-autotable@^5.0.7",
-        "jspdf": "https://esm.sh/jspdf@^4.0.0"
-      }
-    }
-    </script>
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.475.0",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@3.8.2",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
 <link rel="stylesheet" href="/index.css">
 </head>
 <body class="antialiased text-gray-900">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
-import { CalcResults, InvestmentState } from '../types';
-import { formatCurrency, formatPercent } from '../utils/formatters';
+import { CalcResults, InvestmentState } from '../types.ts';
+import { formatCurrency, formatPercent } from '../utils/formatters.ts';
 
 export const generatePDFReport = async (
   results: CalcResults,

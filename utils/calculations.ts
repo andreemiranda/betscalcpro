@@ -1,5 +1,5 @@
 
-import { ProgressionRow, CalcResults } from '../types';
+import { ProgressionRow, CalcResults } from '../types.ts';
 
 export const calculateProgression = (
   initialInvestment: number,

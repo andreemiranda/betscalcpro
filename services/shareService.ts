@@ -1,6 +1,6 @@
 
-import { CalcResults, InvestmentState } from '../types';
-import { formatCurrency, formatPercent } from '../utils/formatters';
+import { CalcResults, InvestmentState } from '../types.ts';
+import { formatCurrency, formatPercent } from '../utils/formatters.ts';
 
 const getShareText = (results: CalcResults, inputs: InvestmentState) => {
   return `Confira minha progressão de banca no Bet's Calc Pro! 💰📈%0A%0AInvestimento: ${inputs.initialInvestment}%0AOdd Média: ${inputs.averageOdd}%25%0AJogos: ${inputs.numberOfGames}%0AValor Final: ${formatCurrency(results.finalValue)}%0ARentabilidade: ${formatPercent(results.rentability)}%0A%0AFaça sua simulação aqui: ${window.location.href}`;

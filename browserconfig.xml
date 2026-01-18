@@ -3,10 +3,9 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="https://picsum.photos/70/70?random=ms70"/>
-            <square150x150logo src="https://picsum.photos/150/150?random=ms150"/>
-            <square310x310logo src="https://picsum.photos/310/310?random=ms310"/>
-            <wide310x150logo src="https://picsum.photos/310/150?random=ms310w"/>
+            <square70x70logo src="/images/pwa-72.png"/>
+            <square150x150logo src="/images/pwa-192.png"/>
+            <square310x310logo src="/images/pwa-512.png"/>
             <TileColor>#006B3D</TileColor>
         </tile>
     </msapplication>

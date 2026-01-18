@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { ArrowLeft, BarChart3, Users, FileDown, Share2, Calendar } from 'lucide-react';
-import { COLORS } from '../constants';
+import { COLORS } from '../constants.ts';
 
 interface StatsData {
   visits: number;
@@ -17,7 +17,7 @@ interface StatsViewProps {
 
 const StatsView: React.FC<StatsViewProps> = ({ data, onBack }) => {
   const formatDate = (dateStr: string) => {
-    if (!dateStr) return 'Ninhum acesso';
+    if (!dateStr) return 'Nenhum acesso';
     return new Date(dateStr).toLocaleString('pt-BR');
   };
 
