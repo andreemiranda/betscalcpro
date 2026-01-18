@@ -43,20 +43,6 @@ O projeto é organizado de forma modular para facilitar a manutenção e escalab
 
 ---
 
-## 🖼️ Guia de Personalização de Imagens
-
-Para garantir que o app tenha sua identidade visual, substitua os arquivos na pasta `/images/` seguindo estas especificações:
-
-| Arquivo | Tamanho Recomendado | Uso |
-| :--- | :--- | :--- |
-| **favicon.png** | 32x32 px | Ícone da aba do navegador. |
-| **og-image.png** | 1200x630 px | Imagem que aparece no WhatsApp, Facebook e LinkedIn. |
-| **twitter-card.png**| 1200x600 px | Imagem otimizada para o Twitter (X). |
-| **pwa-192.png** | 192x192 px | Ícone exibido na tela inicial do celular Android/iOS. |
-| **pwa-512.png** | 512x512 px | Ícone da tela de carregamento (Splash Screen) do PWA. |
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **React 19**: Interface reativa e moderna.
