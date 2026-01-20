@@ -31,18 +31,13 @@
     <meta name="twitter:description" content="Calculadora Profissional de Apostas.">
     <meta name="twitter:image" content="/images/twitter-card.png">
 
-    <!-- Google Fonts: Lexend -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Lexend', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+              sans: ['Arial', 'Helvetica', 'sans-serif', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
             },
             colors: {
               primary: '#006B3D',
@@ -68,8 +63,8 @@
         user-select: none;
       }
       body {
-        font-family: 'Lexend', sans-serif;
-        background: #006B3D; /* Cor fixa para evitar flashes brancos */
+        font-family: Arial, Helvetica, sans-serif;
+        background: #006B3D;
         min-height: 100vh;
         margin: 0;
       }
@@ -78,7 +73,8 @@
       }
       input { user-select: text; }
       
-      /* Efeito de hover amarelo global para links que não usam tailwind explicitamente */
+      /* Efeito de hover amarelo global */
+      a { transition: color 0.3s ease; }
       a:hover {
         color: #FBEE23 !important;
         border-color: #FBEE23 !important;
